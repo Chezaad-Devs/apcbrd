@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "../css/Header.module.css";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/Logo-APC2.webp";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const handleLogout = () => {
     // Aquí deberías implementar la lógica para cerrar sesión
     localStorage.removeItem("authToken");  // Ejemplo, eliminando el token del localStorage
-    window.location.href ="https://centrokfa.com/blog/";  // Recarga la página para reflejar el cambio de estado
+    window.location.href ="https://apcbrd.com/noticias/";  // Recarga la página para reflejar el cambio de estado
   };
 
   return (
@@ -16,10 +16,10 @@ const Header = () => {
         <Link to="/" className={styles.link}>
           <img
             src={Logo}
-            alt="Teamelizabeth logo"
-            width={90}
-            height={75}
-            title="Teamelizabeth"
+            width={200}
+            height={60}
+            alt="Apcbrd"
+            title="apcbrd"
             loading="lazy"
             className={styles.logo}
           />

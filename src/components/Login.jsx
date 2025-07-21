@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/Logo-APC2.webp";
 import Style from "../css/Login.module.css";
 import { useNavigate } from "react-router-dom";
 // import { HiOutlineMail, HiOutlineLockClosed } from "react-icons/hi" fdhgfhfh;
 
 function Login() {
-  const ApiUrl ='https://centrokfa.com/?rest_route=/simple-jwt-login/v1/auth';
+  const ApiUrl ='https://apcbrd.com/?rest_route=/simple-jwt-login/v1/auth';
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-    AUTH_KEY: "centrokfakey",
+    AUTH_KEY: "apckey",
   });
 
   const [errors, setErrors] = useState({

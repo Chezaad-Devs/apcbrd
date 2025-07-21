@@ -19,7 +19,7 @@ const DeletedPosts = () => {
 
       try {
         const response = await fetch(
-          "https://centrokfa.com/wp-json/wp/v2/posts?status=trash", // Filtra solo los posts eliminados
+          "https://apcbrd.com/wp-json/wp/v2/posts?status=trash", // Filtra solo los posts eliminados
           {
             method: "GET",
             headers: {
@@ -58,7 +58,7 @@ const DeletedPosts = () => {
   
     try {
       const response = await axios.post(
-        `https://centrokfa.com/wp-json/wp/v2/posts/${postId}`,
+        `https://apcbrd.com/wp-json/wp/v2/posts/${postId}`,
         { status: "publish" }, // Cambia el estado del post
         {
           headers: {

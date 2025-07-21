@@ -8,7 +8,7 @@ const PostCard = ({ post, onEdit, onDelete }) => {
     if (post.featured_media) {
       // Hacer una segunda petición para obtener la imagen destacada
       fetch(
-        `https://centrokfa.com/wp-json/wp/v2/media/${post.featured_media}`
+        `https://apcbrd.com/wp-json/wp/v2/media/${post.featured_media}`
       )
         .then((res) => res.json())
         .then((data) => setImageUrl(data.source_url))

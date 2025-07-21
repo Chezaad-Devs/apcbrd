@@ -30,7 +30,7 @@ const EditPost = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "https://centrokfa.com/wp-json/wp/v2/categories"
+          "https://apcbrd.com/wp-json/wp/v2/categories"
         );
         setAllCategories(response.data);
       } catch (err) {
@@ -45,7 +45,7 @@ const EditPost = () => {
     const fetchPostDetails = async () => {
       try {
         const response = await axios.get(
-          `https://centrokfa.com/wp-json/wp/v2/posts/${id}`
+          `https://apcbrd.com/wp-json/wp/v2/posts/${id}`
         );
         const post = response.data;
         setTitle(post.title.rendered);
@@ -96,7 +96,7 @@ const EditPost = () => {
       formData.append("file", image);
       try {
         const mediaResponse = await axios.post(
-          "https://centrokfa.com/wp-json/wp/v2/media",
+          "https://apcbrd.com/wp-json/wp/v2/media",
           formData,
           {
             headers: {
@@ -122,7 +122,7 @@ const EditPost = () => {
 
     try {
       const response = await axios.put(
-        `https://centrokfa.com/wp-json/wp/v2/posts/${id}`,
+        `https://apcbrd.com/wp-json/wp/v2/posts/${id}`,
         postData
       );
 
