@@ -19,7 +19,7 @@ const DraftPosts = () => {
 
       try {
         const response = await fetch(
-          "https://teamelizabethmartinez.com/wp-json/wp/v2/posts?status=draft", // Filtra solo los posts en borrador
+          "https://centrokfa.com/wp-json/wp/v2/posts?status=draft", // Filtra solo los posts en borrador
           {
             method: "GET",
             headers: {
@@ -54,7 +54,7 @@ const DraftPosts = () => {
 
     try {
       await axios.post(
-        `https://teamelizabethmartinez.com/wp-json/wp/v2/posts/${postId}`,
+        `https://centrokfa.com/wp-json/wp/v2/posts/${postId}`,
         {
           status: "publish", // Cambiamos el estado del post a "publicado"
         },

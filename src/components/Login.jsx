@@ -6,13 +6,13 @@ import { useNavigate } from "react-router-dom";
 // import { HiOutlineMail, HiOutlineLockClosed } from "react-icons/hi" fdhgfhfh;
 
 function Login() {
-  const ApiUrl ='https://teamelizabethmartinez.com/?rest_route=/simple-jwt-login/v1/auth';
+  const ApiUrl ='https://centrokfa.com/?rest_route=/simple-jwt-login/v1/auth';
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-    AUTH_KEY: "teamkey",
+    AUTH_KEY: "centrokfakey",
   });
 
   const [errors, setErrors] = useState({

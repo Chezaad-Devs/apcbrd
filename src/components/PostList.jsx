@@ -24,7 +24,7 @@ const PostList = () => {
 
       try {
         // Obtener el ID del usuario logeado (esto puede depender de tu implementación)
-        const responseUser = await axios.get("https://teamelizabethmartinez.com/wp-json/wp/v2/users/me", {
+        const responseUser = await axios.get("https://centrokfa.com/wp-json/wp/v2/users/me", {
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const PostList = () => {
         setUserId(responseUser.data.id);
 
         const response = await fetch(
-          "https://teamelizabethmartinez.com/wp-json/wp/v2/posts",
+          "https://centrokfa.com/wp-json/wp/v2/posts",
           {
             method: "GET",
             headers: {
@@ -83,7 +83,7 @@ const PostList = () => {
 
     try {
       await axios.delete(
-        `https://teamelizabethmartinez.com/wp-json/wp/v2/posts/${postToDelete}`,
+        `https://centrokfa.com/wp-json/wp/v2/posts/${postToDelete}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

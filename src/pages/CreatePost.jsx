@@ -21,7 +21,7 @@ const CreatePost = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get(
-          "https://teamelizabethmartinez.com/wp-json/wp/v2/categories"
+          "https://centrokfa.com/wp-json/wp/v2/categories"
         );
         setAllCategories(response.data);
       } catch (err) {
@@ -69,7 +69,7 @@ const CreatePost = () => {
       formData.append("file", image);
       try {
         const mediaResponse = await axios.post(
-          "https://teamelizabethmartinez.com/wp-json/wp/v2/media",
+          "https://centrokfa.com/wp-json/wp/v2/media",
           formData,
           {
             headers: {
@@ -96,7 +96,7 @@ const CreatePost = () => {
 
     try {
       const response = await axios.post(
-        "https://teamelizabethmartinez.com/wp-json/wp/v2/posts",
+        "https://centrokfa.com/wp-json/wp/v2/posts",
         postData,
         {
           headers: { Authorization: `Bearer ${token}` },

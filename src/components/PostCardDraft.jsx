@@ -7,7 +7,7 @@ const PostCardDraft = ({ post, onRestore }) => {
 
   useEffect(() => {
     if (post.featured_media) {
-      fetch(`https://teamelizabethmartinez.com/wp-json/wp/v2/media/${post.featured_media}`)
+      fetch(`https://centrokfa.com/wp-json/wp/v2/media/${post.featured_media}`)
         .then((res) => res.json())
         .then((data) => setImageUrl(data.source_url))
         .catch((err) => {
